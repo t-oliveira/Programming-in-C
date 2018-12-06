@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+   {
+	int mais[5],menor=0,soma;
+	int i,andares,entrar,sair;
+	printf("Digite o numero de andares do predio:");
+	scanf("%d",&andares);
+
+	printf("\n");
+	for(i=0;i<andares;i++){
+		if(menor<16)
+		{
+		printf("quantas pessoas entraram no %d andar:",i+1);
+		scanf("%d",&entrar);
+		menor=menor+entrar;
+		printf("quantas pessoas sairam no %d andar:",1+1);
+		scanf("%d",&sair);
+		menor=menor-sair;
+		printf("Tem %d pessoas no elevador\n\n", menor);
+	                      }
+         }
+	if(menor>15)
+	{
+		printf ("Excesso de Pessoas\n");
+	}
+		
+		
+
+	system("pause") ;
+	return 0;	
+	}
